@@ -15,25 +15,54 @@
             color: #333;
         }
         header {
-            background: #333;
+            position: relative;
+            background: url('/mnt/data/joels trä loga utan bakgrund(1).svg') no-repeat center/contain, #333;
             color: #fff;
-            padding: 1rem 0;
             text-align: center;
+            padding: 4rem 1rem;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        header p {
+            margin: 1rem 0;
+            font-size: 1.2rem;
         }
         nav {
             display: flex;
             justify-content: center;
             background: #444;
-            padding: 0.5rem 0;
+            padding: 1rem 0;
         }
         nav a {
             color: #fff;
             text-decoration: none;
             margin: 0 1rem;
             font-weight: bold;
+            font-size: 1.1rem;
         }
         nav a:hover {
             text-decoration: underline;
+        }
+        .hero {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 5rem 1rem;
+            position: relative;
+        }
+        .hero button {
+            background: #ff4500;
+            color: #fff;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+        .hero button:hover {
+            background: #e63900;
         }
         .container {
             max-width: 1200px;
@@ -57,7 +86,7 @@
             background: #333;
             color: #fff;
             text-align: center;
-            padding: 1rem 0;
+            padding: 2rem 1rem;
             margin-top: 2rem;
         }
         @media (max-width: 768px) {
@@ -74,14 +103,19 @@
 </head>
 <body>
     <header>
-        <h1>Välkommen till vårt Snickarföretag</h1>
-        <p>Professionella bygg- och renoveringstjänster för alla behov.</p>
+        <h1>Välkommen till Joel's Trä och Co</h1>
+        <p>Din partner för tak, fasader, markarbete och mer.</p>
     </header>
     <nav>
         <a href="#tjanster">Tjänster</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#kontakt">Kontakt</a>
     </nav>
+    <div class="hero">
+        <h2>Professionella bygg- och renoveringstjänster</h2>
+        <p>Vi levererar kvalitet för varje projekt - stort som smått.</p>
+        <button onclick="location.href='#kontakt'">Kontakta oss idag</button>
+    </div>
     <div class="container">
         <section id="tjanster">
             <h2>Våra Tjänster</h2>
@@ -133,7 +167,7 @@
         </section>
     </div>
     <footer>
-        <p>&copy; 2025 Snickarföretag. Alla rättigheter förbehållna.</p>
+        <p>&copy; 2025 Joel's Trä och Co. Alla rättigheter förbehållna.</p>
     </footer>
 </body>
 </html>
